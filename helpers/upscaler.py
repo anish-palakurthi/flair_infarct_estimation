@@ -35,7 +35,7 @@ def process_all_subfolders(top_folder, output_base_folder, target_size=(512, 512
             upscale_images_in_folder(subfolder_path, output_dir, target_size)
 
 # Example usage
-process_all_subfolders('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/256pages', 
-    '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Images/final_images/upscaled_samples')
+process_all_subfolders('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/AP_pngs', 
+    '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/upscaled_AP_pngs')
 
 

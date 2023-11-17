@@ -35,4 +35,5 @@ def process_all_subfolders(top_folder, output_base_folder):
             rotate_images_in_folder(subfolder_path, output_dir)
 
 # Example usage
-process_all_subfolders('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Images/png_images', '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Images/rotated_png_images')
+process_all_subfolders('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/KESHAV_pngs', 
+                       '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/KESHAV_rotated_pngs')
