@@ -30,6 +30,6 @@ def process_all_subfolders(top_folder, output_base_folder):
             process_images_in_folder(subfolder_path, output_folder)
 
 # Example usage
-top_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Images'  # Source folder path
-output_base_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Images_CLAHE'  # Output folder path
+top_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels'  # Source folder path
+output_base_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels_CLAHE'  # Output folder path
 process_all_subfolders(top_folder, output_base_folder)
