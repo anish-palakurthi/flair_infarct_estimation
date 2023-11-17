@@ -12,10 +12,10 @@ def reverse_file_naming(folder_path):
         slice_number = int(temp_name.split('_slice_')[1].split('.png')[0])
         max_slice_number = max(max_slice_number, slice_number)
 
-    # Rename files to their new names with reversed numbering
+    # Rename files to their new names with reversed numbering starting at 0
     for temp_name in temp_rename_map.values():
         slice_number = int(temp_name.split('_slice_')[1].split('.png')[0])
-        new_slice_number = max_slice_number - slice_number + 1
+        new_slice_number = max_slice_number - slice_number  # Adjusted line
         new_filename = temp_name.replace(f'_slice_{slice_number}', f'_slice_{new_slice_number}').replace('temp_', '')
         os.rename(os.path.join(folder_path, temp_name), os.path.join(folder_path, new_filename))
         print(f'Renamed {temp_name} to {new_filename}')
@@ -30,5 +30,6 @@ def process_all_subfolders(top_folder):
             reverse_file_naming(subfolder_path)
 
 # Example usage
-top_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/rotate_results'  # Replace with your top-level folder path
+top_folder = '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/final_labels copy 2'  # Replace with your top-level folder path
 process_all_subfolders(top_folder)
+
