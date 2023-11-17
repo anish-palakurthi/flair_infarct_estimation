@@ -37,8 +37,8 @@ def process_all_nii_files(folder_path, output_base_dir, is_mask=False):
             convert_nii_to_images(file_path, output_dir, is_mask)
 
 # Example usage for images
-process_all_nii_files('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/KESHAV_labels',
-                      '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/KESHAV_pngs')
+process_all_nii_files('/Users/anishpalakurthi/Desktop/flair_infarct_estimation/FLAIR_Labels/raw_labels/KESHAV_labels',
+                      '/Users/anishpalakurthi/Desktop/flair_infarct_estimation/temp_rotate_test')
 
 # Example usage for masks
 # process_all_nii_files('/path/to/nii/mask_folder', '/path/to/output/masks_folder', is_mask=True)
